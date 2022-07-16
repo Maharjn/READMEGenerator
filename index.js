@@ -31,7 +31,7 @@ inquirer.prompt([
   },
   {
     type: 'list',
-    message: "Choose the appropriate license for this project",
+    message: "Choose the appropriate license for this project :",
     name: 'license',
     choices: [
       'MIT', 
@@ -44,7 +44,7 @@ inquirer.prompt([
   },
   {
     type: 'input',
-    message: "Who are the contributors of the Project",
+    message: "Who are the contributors of the Project?",
     name: 'contributing',
   },
   {
@@ -59,7 +59,7 @@ inquirer.prompt([
   },
   {
     type: 'input',
-    message: "Please enter your Email ID",
+    message: "Please enter your Email ID :",
     name: 'email',
   }
   
