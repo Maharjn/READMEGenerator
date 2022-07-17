@@ -19,7 +19,6 @@ function generateMarkdown({title,
   email}) {
   
   return `
-
 # ${title}
 
 ${generatelicenseBadge(license)}
@@ -30,7 +29,7 @@ ${generatelicenseBadge(license)}
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
+* [Test Instruction](#tests)
 * [Github Link](#github)
 * [Email](#email)
 
@@ -53,8 +52,8 @@ ${generatelicenseBadge(license)}
 ${tests}
 
 ## Github
-
 Visit my github profile here: [${github}](https://github.com/${github})
+
 ## Email
 ${email}
 

@@ -7,6 +7,10 @@ const path = require('path');
 
 
 // questions to ask:
+// what is project title
+// description, installation instructions, usage information, contribution guidelines, and test instructions
+// email
+// github
 
 inquirer.prompt([
   {
@@ -63,17 +67,6 @@ inquirer.prompt([
     name: 'email',
   }
   
-  // what is project title
-
-
-  // license
-
-  // github 
-
-
-  // description, installation instructions, usage information, contribution guidelines, and test instructions
-  // email
-  // github
 ]).then((ans) => {
 
   // once asked
@@ -82,11 +75,11 @@ inquirer.prompt([
 
   // generate a readme file based on the responses
   // in the output folder
-  const outputPath = path.join(__dirname, 'output', 'generated.md');
+  const outputPath = path.join(__dirname, 'output', 'README.md');
 
   fs.writeFile(outputPath, markdown, 'utf-8')
     .then(() => {
-      console.log('generated!')
+      console.log('README.md file is successfully generated in output folder!')
     });
 
 })
